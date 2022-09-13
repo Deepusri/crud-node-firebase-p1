@@ -1,0 +1,34 @@
+### GET VEGGIEs
+GET http://localhost:8383/veggies
+
+### GET VEGGY
+GET http://localhost:8383/veggies/tomato
+
+
+### ADD A VEGGY
+POST http://localhost:8383/addveggy
+Content-Type: application/json
+
+{
+    "name": "cucumber",
+    "status": "green"
+}
+
+### UPDATE STATUS OF A VEGGY
+PATCH http://localhost:8383/changestatus
+Content-Type: application/json
+
+{
+    "name": "beetroot",
+    "newStatus": "pink"
+}
+
+
+###DELETE A VEGGY
+DELETE http://localhost:8383/veggies 
+Content-Type: application/json
+
+{
+    "name": "cucumber"
+}
+
